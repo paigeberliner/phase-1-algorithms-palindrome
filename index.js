@@ -1,13 +1,24 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function isPalindrome(string) {
+  const reversedString = string.split('').reverse().join('');
+  if(string === reversedString)
+    return true; 
+    else 
+    return false;
+  
 }
 
 /* 
-  Add your pseudocode here
+  if string === reversed string
+  return true 
+  else 
+  return false
+
 */
 
 /*
-  Add written explanation of your solution here
+  reversed string = split string into each letter -> reverse the order of the letter -> rejoin each letter into an individual string 
+  if string === reversed string it will return true
+  if not, it will return false 
 */
 
 // You can run `node index.js` to view these console logs
